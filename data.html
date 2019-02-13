@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude Weather Homework</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/spacelab/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+          <a href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\index.html" class="navbar-brand">Latitude Weather Analysis</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="themes">
+                  <a class="dropdown-item" href="../default/">Summary</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\data.html">Data</a>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\comparisons.html">Comparisons</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\lat_temp.html">Latitude vs Temperature</a>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\lat_humi.html">Latitude vs Humidity</a>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\lat_clou.html">Latitude vs Cloudiness</a>
+                  <a class="dropdown-item" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\lat_wind.html">Latitude vs Wind Speed</a>
+                
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\data.html">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:\\C:\Users\lorie\UNCRAL201811DATA3\02-Homework\11-Web\Instructions\comparisons.html">Comparisons</a>
+              </li>
+              
+            </ul>
+  
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/LoriHarris" target="_blank">Lori Harris</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+<table class="table table-bordered table-hover table-condensed">
+    <thead><tr class="table-secondary"><th title="Field #1">FIELD1</th>
+    <th title="Field #2">base</th>
+    <th title="Field #3">clouds</th>
+    <th title="Field #4">cod</th>
+    <th title="Field #5">coord</th>
+    <th title="Field #6">dt</th>
+    <th title="Field #7">id</th>
+    <th title="Field #8">main</th>
+    <th title="Field #9">name</th>
+    <th title="Field #10">sys</th>
+    <th title="Field #11">visibility</th>
+    <th title="Field #12">weather</th>
+    <th title="Field #13">wind</th>
+    </tr></thead>
+    <tbody><tr class="table-default">
+    <td align="right">0</td>
+    <td>stations</td>
+    <td>{&#39;all&#39;: 90}</td>
+    <td align="right">200</td>
+    <td>{&#39;lon&#39;: 2.35, &#39;lat&#39;: 48.86}</td>
+    <td align="right">1546914600</td>
+    <td align="right">2988507</td>
+    <td>{&#39;temp&#39;: 281.4, &#39;pressure&#39;: 1027, &#39;humidity&#39;: 87, &#39;temp_min&#39;: 280.15, &#39;temp_max&#39;: 282.15}</td>
+    <td>Paris</td>
+    <td>{&#39;type&#39;: 1, &#39;id&#39;: 6540, &#39;message&#39;: 0.0055000000000000005, &#39;country&#39;: &#39;FR&#39;, &#39;sunrise&#39;: 1546933361, &#39;sunset&#39;: 1546963924}</td>
+    <td align="right">5000</td>
+    <td>[{&#39;id&#39;: 310, &#39;main&#39;: &#39;Drizzle&#39;, &#39;description&#39;: &#39;light intensity drizzle rain&#39;, &#39;icon&#39;: &#39;09n&#39;}, {&#39;id&#39;: 701, &#39;main&#39;: &#39;Mist&#39;, &#39;description&#39;: &#39;mist&#39;, &#39;icon&#39;: &#39;50n&#39;}]</td>
+    <td>{&#39;speed&#39;: 4.1, &#39;deg&#39;: 250}</td>
+    </tr>
+    <tr>
+    <td align="right">1</td>
+    <td>stations</td>
+    <td>{&#39;all&#39;: 90}</td>
+    <td align="right">200</td>
+    <td>{&#39;lon&#39;: -78.64, &#39;lat&#39;: 35.78}</td>
+    <td align="right">1546915800</td>
+    <td align="right">4487042</td>
+    <td>{&#39;temp&#39;: 280.92, &#39;pressure&#39;: 1026, &#39;humidity&#39;: 70, &#39;temp_min&#39;: 279.45, &#39;temp_max&#39;: 283.45}</td>
+    <td>Raleigh</td>
+    <td>{&#39;type&#39;: 1, &#39;id&#39;: 4598, &#39;message&#39;: 0.0463, &#39;country&#39;: &#39;US&#39;, &#39;sunrise&#39;: 1546950303, &#39;sunset&#39;: 1546985863}</td>
+    <td align="right">16093</td>
+    <td>[{&#39;id&#39;: 804, &#39;main&#39;: &#39;Clouds&#39;, &#39;description&#39;: &#39;overcast clouds&#39;, &#39;icon&#39;: &#39;04n&#39;}]</td>
+    <td>{&#39;speed&#39;: 1.65, &#39;deg&#39;: 103.5}</td>
+    </tr>
+    <tr>
+    <td align="right">2</td>
+    <td>stations</td>
+    <td>{&#39;all&#39;: 90}</td>
+    <td align="right">200</td>
+    <td>{&#39;lon&#39;: -73.99, &#39;lat&#39;: 40.73}</td>
+    <td align="right">1546915860</td>
+    <td align="right">5128581</td>
+    <td>{&#39;temp&#39;: 273.43, &#39;pressure&#39;: 1027, &#39;humidity&#39;: 37, &#39;temp_min&#39;: 273.15, &#39;temp_max&#39;: 274.25}</td>
+    <td>New York</td>
+    <td>{&#39;type&#39;: 1, &#39;id&#39;: 4698, &#39;message&#39;: 0.0219, &#39;country&#39;: &#39;US&#39;, &#39;sunrise&#39;: 1546949995, &#39;sunset&#39;: 1546983940}</td>
+    <td align="right">16093</td>
+    <td>[{&#39;id&#39;: 804, &#39;main&#39;: &#39;Clouds&#39;, &#39;description&#39;: &#39;overcast clouds&#39;, &#39;icon&#39;: &#39;04n&#39;}]</td>
+    <td>{&#39;speed&#39;: 3.6, &#39;deg&#39;: 130}</td>
+    </tr>
+    <tr>
+    <td align="right">3</td>
+    <td>stations</td>
+    <td>{&#39;all&#39;: 75}</td>
+    <td align="right">200</td>
+    <td>{&#39;lon&#39;: -122.33, &#39;lat&#39;: 47.6}</td>
+    <td align="right">1546915980</td>
+    <td align="right">5809844</td>
+    <td>{&#39;temp&#39;: 277.33, &#39;pressure&#39;: 1024, &#39;humidity&#39;: 81, &#39;temp_min&#39;: 275.95, &#39;temp_max&#39;: 278.15}</td>
+    <td>Seattle</td>
+    <td>{&#39;type&#39;: 1, &#39;id&#39;: 3417, &#39;message&#39;: 0.0424, &#39;country&#39;: &#39;US&#39;, &#39;sunrise&#39;: 1546962976, &#39;sunset&#39;: 1546994172}</td>
+    <td align="right">16093</td>
+    <td>[{&#39;id&#39;: 803, &#39;main&#39;: &#39;Clouds&#39;, &#39;description&#39;: &#39;broken clouds&#39;, &#39;icon&#39;: &#39;04n&#39;}]</td>
+    <td>{&#39;speed&#39;: 1.5, &#39;deg&#39;: 144.5}</td>
+    </tr>
+    </tbody></table>
