@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Latitude Weather Homework</title>    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/lux/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -29,6 +30,9 @@
                   <a class="dropdown-item" href="lat_humi.html">Latitude vs Humidity</a>
                   <a class="dropdown-item" href="lat_clou.html">Latitude vs Cloudiness</a>
                   <a class="dropdown-item" href="lat_wind.html">Latitude vs Wind Speed</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="outliers.html">Outliers</a>
+
                 
                 </div>
               </li>
@@ -38,7 +42,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="comparisons.html">Comparisons</a>
               </li>
-              
+              <li class="nav-item">
+                  <a class="nav-link" href="outliers.html">Outliers</a>
+                </li>
             </ul>
   
             <ul class="nav navbar-nav ml-auto">
@@ -50,27 +56,29 @@
           </div>
         </div>
       </div>
-
+    </div>
 
 
 <div class="container">
 
   <div class="row">
   <div class ="col-md-12">
-    
+
+      <h1 class="text-center"><hr>Weather versus Latitude</hr></h1>
       
 <table class="table table-sm table-responsive">
 
-    <thead><tr><th title="Field #1">City_ID</th>
-    <th title="Field #2">City</th>
-    <th title="Field #3">Cloudiness</th>
-    <th title="Field #4">Country</th>
-    <th title="Field #5">Date</th>
-    <th title="Field #6">Humidity</th>
-    <th title="Field #7">Lat</th>
-    <th title="Field #8">Lng</th>
-    <th title="Field #9">Max Temp</th>
-    <th title="Field #10">Wind Speed</th>
+    <thead><tr>
+    <th scope="col">City_ID</th>
+    <th scope="col">City</th>
+    <th scope="col">Cloudiness</th>
+    <th scope="col">Country</th>
+    <th scope="col">Date</th>
+    <th scope="col">Humidity</th>
+    <th scope="col">Lat</th>
+    <th scope="col">Lng</th>
+    <th scope="col">Max Temp</th>
+    <th scope="col">Wind Speed</th>
     </tr></thead>
     <tbody><tr>
     <td align="right">0</td>
